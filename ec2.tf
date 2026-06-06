@@ -6,7 +6,7 @@ resource "aws_instance" "cmtr-6akiyfai-ec2" {
   instance_type               = "t3.small"
   associate_public_ip_address = true
   tags = {
-    Project = "epam-tf-lab"
-    ID      = "cmtr-6akiyfai"
+    Project = var.project
+    ID      = var.id
   }
 }
